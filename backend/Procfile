@@ -1,0 +1,1 @@
+web: gunicorn auracart_api.wsgi:application

@@ -1,0 +1,128 @@
+.cart-container {
+  background: #111827;
+  padding: 32px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  background: #0f172a;
+  align-items: center;
+  transition: border-color 0.2s ease;
+}
+
+.cart-item:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h4 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.cart-item-details p {
+  color: #10b981;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.qty-controls button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f8fafc;
+  transition: all 0.15s ease;
+}
+
+.qty-controls button:hover {
+  background: #334155;
+  border-color: #6366f1;
+}
+
+.btn-remove {
+  background: transparent;
+  color: #f87171;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+  margin-top: 4px;
+  transition: color 0.15s ease;
+}
+
+.btn-remove:hover {
+  color: #ef4444;
+  text-decoration: underline;
+}
+
+.cart-summary {
+  background: #0f172a;
+  padding: 26px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: fit-content;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cart-summary h3 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.btn-checkout {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

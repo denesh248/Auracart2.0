@@ -1,0 +1,15 @@
+node_modules/
+.env
+*.env
+.env.*
+backend/.env
+frontend/.env
+build/
+dist/
+staticfiles/
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+media/
+.DS_Store
